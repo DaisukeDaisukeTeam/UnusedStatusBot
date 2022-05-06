@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "8cce9a61fb3bf620570147cf7cb768f7",
+  "content-hash": "ee231947a5c8b112b3f03b11496d8dc0",
   "packages": [
     {
       "name": "discord-php/http",
@@ -113,16 +113,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/igorw/evenement/zipball/531bfb9d15f8aa57454f5f0285b18bec903b8fb7",
-                "reference": "531bfb9d15f8aa57454f5f0285b18bec903b8fb7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
-            },
-            "type": "library",
+        "reference": "531bfb9d15f8aa57454f5f0285b18bec903b8fb7",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=7.0"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^6.0"
+      },
+      "type": "library",
             "autoload": {
                 "psr-0": {
                     "Evenement": "src"
@@ -133,16 +133,16 @@
                 "MIT"
             ],
             "authors": [
-                {
-                    "name": "Igor Wiedler",
-                    "email": "igor@wiedler.ch"
-                }
+              {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch"
+              }
             ],
-            "description": "Événement is a very simple event dispatching library for PHP",
-            "keywords": [
-              "event-dispatcher",
-              "event-emitter"
-            ],
+      "description": "Événement is a very simple event dispatching library for PHP",
+      "keywords": [
+        "event-dispatcher",
+        "event-emitter"
+      ],
       "support": {
         "issues": "https://github.com/igorw/evenement/issues",
         "source": "https://github.com/igorw/evenement/tree/master"
@@ -219,16 +219,16 @@
         "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
         "shasum": ""
       },
-            "require": {
-              "php": "^7.2.5 || ^8.0",
-              "psr/http-factory": "^1.0",
-              "psr/http-message": "^1.0",
-              "ralouphie/getallheaders": "^3.0"
-            },
-            "provide": {
-              "psr/http-factory-implementation": "1.0",
-              "psr/http-message-implementation": "1.0"
-            },
+      "require": {
+        "php": "^7.2.5 || ^8.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^1.0",
+        "ralouphie/getallheaders": "^3.0"
+      },
+      "provide": {
+        "psr/http-factory-implementation": "1.0",
+        "psr/http-message-implementation": "1.0"
+      },
             "require-dev": {
               "bamarni/composer-bin-plugin": "^1.4.1",
               "http-interop/http-factory-tests": "^0.9",
@@ -290,16 +290,16 @@
               }
             ],
             "description": "PSR-7 message implementation that also provides common utility methods",
-            "keywords": [
-                "http",
-              "message",
-              "psr-7",
-              "request",
-              "response",
-              "stream",
-              "uri",
-              "url"
-            ],
+      "keywords": [
+        "http",
+        "message",
+        "psr-7",
+        "request",
+        "response",
+        "stream",
+        "uri",
+        "url"
+      ],
       "support": {
         "issues": "https://github.com/guzzle/psr7/issues",
         "source": "https://github.com/guzzle/psr7/tree/2.2.1"
@@ -320,16 +320,16 @@
       ],
       "time": "2022-03-20T21:55:58+00:00"
     },
-        {
-            "name": "mollie/polyfill-libsodium",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mollie/polyfill-libsodium.git",
-                "reference": "60351707e048080a2218a97296f88733f050f183"
-            },
-            "dist": {
-                "type": "zip",
+    {
+      "name": "mollie/polyfill-libsodium",
+      "version": "v1.1.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/mollie/polyfill-libsodium.git",
+        "reference": "60351707e048080a2218a97296f88733f050f183"
+      },
+      "dist": {
+        "type": "zip",
                 "url": "https://api.github.com/repos/mollie/polyfill-libsodium/zipball/60351707e048080a2218a97296f88733f050f183",
                 "reference": "60351707e048080a2218a97296f88733f050f183",
                 "shasum": ""
@@ -357,53 +357,53 @@
                 },
                 {
                     "name": "Willem Stuursma-Ruwen",
-                    "email": "willem@mollie.com"
+                  "email": "willem@mollie.com"
                 }
             ],
-            "description": "A polyfill package to transition from the libsodium php extension to the sodium extension. Which is included in PHP 7.2",
-            "support": {
-                "issues": "https://github.com/mollie/polyfill-libsodium/issues",
-                "source": "https://github.com/mollie/polyfill-libsodium/tree/master"
-            },
-            "time": "2018-01-22T16:27:22+00:00"
-        },
+      "description": "A polyfill package to transition from the libsodium php extension to the sodium extension. Which is included in PHP 7.2",
+      "support": {
+        "issues": "https://github.com/mollie/polyfill-libsodium/issues",
+        "source": "https://github.com/mollie/polyfill-libsodium/tree/master"
+      },
+      "time": "2018-01-22T16:27:22+00:00"
+    },
     {
       "name": "monolog/monolog",
-      "version": "2.4.0",
+      "version": "2.5.0",
       "source": {
         "type": "git",
         "url": "https://github.com/Seldaek/monolog.git",
-        "reference": "d7fd7450628561ba697b7097d86db72662f54aef"
+        "reference": "4192345e260f1d51b365536199744b987e160edc"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d7fd7450628561ba697b7097d86db72662f54aef",
-        "reference": "d7fd7450628561ba697b7097d86db72662f54aef",
+        "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4192345e260f1d51b365536199744b987e160edc",
+        "reference": "4192345e260f1d51b365536199744b987e160edc",
         "shasum": ""
       },
-            "require": {
-                "php": ">=7.2",
-              "psr/log": "^1.0.1 || ^2.0 || ^3.0"
-            },
-            "provide": {
-              "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
-            },
-            "require-dev": {
-              "aws/aws-sdk-php": "^2.4.9 || ^3.0",
-              "doctrine/couchdb": "~1.0@dev",
-              "elasticsearch/elasticsearch": "^7",
-              "graylog2/gelf-php": "^1.4.2",
-              "mongodb/mongodb": "^1.8",
-              "php-amqplib/php-amqplib": "~2.4 || ^3",
-              "php-console/php-console": "^3.1.3",
-              "phpspec/prophecy": "^1.6.1",
-              "phpstan/phpstan": "^0.12.91",
-              "phpunit/phpunit": "^8.5",
-              "predis/predis": "^1.1",
-              "rollbar/rollbar": "^1.3 || ^2 || ^3",
-              "ruflin/elastica": ">=0.90@dev",
-              "swiftmailer/swiftmailer": "^5.3|^6.0"
-            },
+      "require": {
+        "php": ">=7.2",
+        "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+      },
+      "provide": {
+        "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
+      },
+      "require-dev": {
+        "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+        "doctrine/couchdb": "~1.0@dev",
+        "elasticsearch/elasticsearch": "^7",
+        "graylog2/gelf-php": "^1.4.2",
+        "mongodb/mongodb": "^1.8",
+        "php-amqplib/php-amqplib": "~2.4 || ^3",
+        "php-console/php-console": "^3.1.3",
+        "phpspec/prophecy": "^1.6.1",
+        "phpstan/phpstan": "^0.12.91",
+        "phpunit/phpunit": "^8.5",
+        "predis/predis": "^1.1",
+        "rollbar/rollbar": "^1.3 || ^2 || ^3",
+        "ruflin/elastica": ">=0.90@dev",
+        "swiftmailer/swiftmailer": "^5.3|^6.0"
+      },
             "suggest": {
               "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
               "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
@@ -452,52 +452,53 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-              "source": "https://github.com/Seldaek/monolog/tree/2.4.0"
+              "source": "https://github.com/Seldaek/monolog/tree/2.5.0"
             },
             "funding": [
                 {
-                    "url": "https://github.com/Seldaek",
-                    "type": "github"
+                  "url": "https://github.com/Seldaek",
+                  "type": "github"
                 },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                "type": "tidelift"
+              }
             ],
-      "time": "2022-03-14T12:44:37+00:00"
-        },
+      "time": "2022-04-08T15:43:54+00:00"
+    },
     {
       "name": "nesbot/carbon",
-      "version": "2.57.0",
+      "version": "2.58.0",
       "source": {
         "type": "git",
         "url": "https://github.com/briannesbitt/Carbon.git",
-        "reference": "4a54375c21eea4811dbd1149fe6b246517554e78"
+        "reference": "97a34af22bde8d0ac20ab34b29d7bfe360902055"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/4a54375c21eea4811dbd1149fe6b246517554e78",
-        "reference": "4a54375c21eea4811dbd1149fe6b246517554e78",
+        "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/97a34af22bde8d0ac20ab34b29d7bfe360902055",
+        "reference": "97a34af22bde8d0ac20ab34b29d7bfe360902055",
         "shasum": ""
       },
-            "require": {
-              "ext-json": "*",
-              "php": "^7.1.8 || ^8.0",
-              "symfony/polyfill-mbstring": "^1.0",
-              "symfony/polyfill-php80": "^1.16",
-              "symfony/translation": "^3.4 || ^4.0 || ^5.0 || ^6.0"
-            },
-            "require-dev": {
-              "doctrine/dbal": "^2.0 || ^3.0",
-              "doctrine/orm": "^2.7",
-              "friendsofphp/php-cs-fixer": "^3.0",
-              "kylekatarnls/multi-tester": "^2.0",
-              "phpmd/phpmd": "^2.9",
-              "phpstan/extension-installer": "^1.0",
-              "phpstan/phpstan": "^0.12.54 || ^1.0",
-              "phpunit/phpunit": "^7.5.20 || ^8.5.14",
-              "squizlabs/php_codesniffer": "^3.4"
-            },
+      "require": {
+        "ext-json": "*",
+        "php": "^7.1.8 || ^8.0",
+        "symfony/polyfill-mbstring": "^1.0",
+        "symfony/polyfill-php80": "^1.16",
+        "symfony/translation": "^3.4 || ^4.0 || ^5.0 || ^6.0"
+      },
+      "require-dev": {
+        "doctrine/dbal": "^2.0 || ^3.0",
+        "doctrine/orm": "^2.7",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "kylekatarnls/multi-tester": "^2.0",
+        "phpmd/phpmd": "^2.9",
+        "phpstan/extension-installer": "^1.0",
+        "phpstan/phpstan": "^0.12.54 || ^1.0",
+        "phpunit/php-file-iterator": "^2.0.5",
+        "phpunit/phpunit": "^7.5.20 || ^8.5.23",
+        "squizlabs/php_codesniffer": "^3.4"
+      },
             "bin": [
                 "bin/carbon"
             ],
@@ -540,16 +541,16 @@
             ],
             "description": "An API extension for DateTime that supports 281 different languages.",
             "homepage": "https://carbon.nesbot.com",
-            "keywords": [
-                "date",
-                "datetime",
-                "time"
-            ],
-            "support": {
-              "docs": "https://carbon.nesbot.com/docs",
-              "issues": "https://github.com/briannesbitt/Carbon/issues",
-              "source": "https://github.com/briannesbitt/Carbon"
-            },
+      "keywords": [
+        "date",
+        "datetime",
+        "time"
+      ],
+      "support": {
+        "docs": "https://carbon.nesbot.com/docs",
+        "issues": "https://github.com/briannesbitt/Carbon/issues",
+        "source": "https://github.com/briannesbitt/Carbon"
+      },
       "funding": [
         {
           "url": "https://opencollective.com/Carbon",
@@ -560,7 +561,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2022-02-13T18:13:33+00:00"
+      "time": "2022-04-25T19:31:17+00:00"
     },
     {
       "name": "psr/http-factory",
@@ -626,16 +627,16 @@
         "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
       },
       "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+        "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.3.0"
+      },
+      "type": "library",
+      "extra": {
                 "branch-alias": {
                     "dev-master": "1.0.x-dev"
                 }
@@ -660,16 +661,16 @@
             "keywords": [
                 "http",
                 "http-message",
-                "psr",
-                "psr-7",
-                "request",
-                "response"
+              "psr",
+              "psr-7",
+              "request",
+              "response"
             ],
-            "support": {
-                "source": "https://github.com/php-fig/http-message/tree/master"
-            },
-            "time": "2016-08-06T14:39:51+00:00"
-        },
+      "support": {
+        "source": "https://github.com/php-fig/http-message/tree/master"
+      },
+      "time": "2016-08-06T14:39:51+00:00"
+    },
     {
       "name": "psr/log",
       "version": "3.0.0",
@@ -684,16 +685,16 @@
         "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
         "shasum": ""
       },
-            "require": {
-              "php": ">=8.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                  "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
+      "require": {
+        "php": ">=8.0.0"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "3.x-dev"
+        }
+      },
+      "autoload": {
                 "psr-4": {
                   "Psr\\Log\\": "src"
                 }
@@ -754,15 +755,15 @@
             "authors": [
                 {
                     "name": "Ralph Khattar",
-                    "email": "ralph.khattar@gmail.com"
+                  "email": "ralph.khattar@gmail.com"
                 }
             ],
-            "description": "A polyfill for getallheaders.",
-            "support": {
-                "issues": "https://github.com/ralouphie/getallheaders/issues",
-                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
-            },
-            "time": "2019-03-08T08:55:37+00:00"
+          "description": "A polyfill for getallheaders.",
+          "support": {
+            "issues": "https://github.com/ralouphie/getallheaders/issues",
+            "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+          },
+          "time": "2019-03-08T08:55:37+00:00"
         },
     {
       "name": "ratchet/pawl",
@@ -778,16 +779,16 @@
         "reference": "af70198bab77a582b31169d3cc3982bed25c161f",
         "shasum": ""
       },
-            "require": {
-              "evenement/evenement": "^3.0 || ^2.0",
-              "guzzlehttp/psr7": "^2.0 || ^1.7",
-              "php": ">=5.4",
-              "ratchet/rfc6455": "^0.3.1",
-              "react/socket": "^1.9"
-            },
-            "require-dev": {
-              "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8"
-            },
+      "require": {
+        "evenement/evenement": "^3.0 || ^2.0",
+        "guzzlehttp/psr7": "^2.0 || ^1.7",
+        "php": ">=5.4",
+        "ratchet/rfc6455": "^0.3.1",
+        "react/socket": "^1.9"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8"
+      },
             "suggest": {
                 "reactivex/rxphp": "~2.0"
             },
@@ -808,16 +809,16 @@
             "keywords": [
                 "Ratchet",
                 "async",
-                "client",
-                "websocket",
-                "websocket client"
+              "client",
+              "websocket",
+              "websocket client"
             ],
-            "support": {
-                "issues": "https://github.com/ratchetphp/Pawl/issues",
-              "source": "https://github.com/ratchetphp/Pawl/tree/v0.4.1"
-            },
+      "support": {
+        "issues": "https://github.com/ratchetphp/Pawl/issues",
+        "source": "https://github.com/ratchetphp/Pawl/tree/v0.4.1"
+      },
       "time": "2021-12-10T14:32:34+00:00"
-        },
+    },
     {
       "name": "ratchet/rfc6455",
       "version": "v0.3.1",
@@ -832,16 +833,16 @@
         "reference": "7c964514e93456a52a99a20fcfa0de242a43ccdb",
         "shasum": ""
       },
-            "require": {
-              "guzzlehttp/psr7": "^2 || ^1.7",
-              "php": ">=5.4.2"
-            },
-            "require-dev": {
-              "phpunit/phpunit": "^5.7",
-              "react/socket": "^1.3"
-            },
-            "type": "library",
-            "autoload": {
+      "require": {
+        "guzzlehttp/psr7": "^2 || ^1.7",
+        "php": ">=5.4.2"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "react/socket": "^1.3"
+      },
+      "type": "library",
+      "autoload": {
                 "psr-4": {
                     "Ratchet\\RFC6455\\": "src"
                 }
@@ -940,10 +941,10 @@
                 "source": "https://github.com/reactphp/cache/tree/v1.1.1"
             },
             "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                  "type": "github"
-                },
+              {
+                "url": "https://github.com/WyriHaximus",
+                "type": "github"
+              },
               {
                 "url": "https://github.com/clue",
                 "type": "github"
@@ -1041,16 +1042,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/reactphp/datagram/zipball/e4c5bf8daf44630f0a938f40fe2104b2b76ad2ff",
-                "reference": "e4c5bf8daf44630f0a938f40fe2104b2b76ad2ff",
-                "shasum": ""
-            },
-            "require": {
-                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
-                "php": ">=5.3",
-                "react/dns": "^1.0 || ^0.4.13",
-                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
-                "react/promise": "~2.1|~1.2"
-            },
+        "reference": "e4c5bf8daf44630f0a938f40fe2104b2b76ad2ff",
+        "shasum": ""
+      },
+      "require": {
+        "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+        "php": ">=5.3",
+        "react/dns": "^1.0 || ^0.4.13",
+        "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
+        "react/promise": "~2.1|~1.2"
+      },
             "require-dev": {
                 "clue/block-react": "~1.0",
                 "phpunit/phpunit": "^5.0 || ^4.8"
@@ -1079,16 +1080,16 @@
                 "client",
                 "datagram",
                 "dgram",
-                "reactphp",
-                "server",
-                "udp"
+              "reactphp",
+              "server",
+              "udp"
             ],
-            "support": {
-                "issues": "https://github.com/reactphp/datagram/issues",
-                "source": "https://github.com/reactphp/datagram/tree/v1.5.0"
-            },
-            "time": "2019-07-10T10:04:15+00:00"
-        },
+      "support": {
+        "issues": "https://github.com/reactphp/datagram/issues",
+        "source": "https://github.com/reactphp/datagram/tree/v1.5.0"
+      },
+      "time": "2019-07-10T10:04:15+00:00"
+    },
     {
       "name": "react/dns",
       "version": "v1.9.0",
@@ -1103,16 +1104,16 @@
         "reference": "6d38296756fa644e6cb1bfe95eff0f9a4ed6edcb",
         "shasum": ""
       },
-            "require": {
-              "php": ">=5.3.0",
-              "react/cache": "^1.0 || ^0.6 || ^0.5",
-              "react/event-loop": "^1.2",
-              "react/promise": "^3.0 || ^2.7 || ^1.2.1",
-              "react/promise-timer": "^1.8"
-            },
-            "require-dev": {
-                "clue/block-react": "^1.2",
-                "phpunit/phpunit": "^9.3 || ^4.8.35"
+      "require": {
+        "php": ">=5.3.0",
+        "react/cache": "^1.0 || ^0.6 || ^0.5",
+        "react/event-loop": "^1.2",
+        "react/promise": "^3.0 || ^2.7 || ^1.2.1",
+        "react/promise-timer": "^1.8"
+      },
+      "require-dev": {
+        "clue/block-react": "^1.2",
+        "phpunit/phpunit": "^9.3 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -1159,16 +1160,16 @@
             },
             "funding": [
                 {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
+                  "url": "https://github.com/WyriHaximus",
+                  "type": "github"
                 },
-                {
-                    "url": "https://github.com/clue",
-                    "type": "github"
-                }
+              {
+                "url": "https://github.com/clue",
+                "type": "github"
+              }
             ],
       "time": "2021-12-20T08:46:54+00:00"
-        },
+    },
     {
       "name": "react/event-loop",
       "version": "v1.3.0",
@@ -1183,17 +1184,17 @@
         "reference": "187fb56f46d424afb6ec4ad089269c72eec2e137",
         "shasum": ""
       },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-              "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
-            },
-            "suggest": {
-                "ext-event": "~1.0 for ExtEventLoop",
-                "ext-pcntl": "For signal handling support when using the StreamSelectLoop",
-                "ext-uv": "* for ExtUvLoop"
-            },
+      "require": {
+        "php": ">=5.3.0"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
+      },
+      "suggest": {
+        "ext-event": "~1.0 for ExtEventLoop",
+        "ext-pcntl": "For signal handling support when using the StreamSelectLoop",
+        "ext-uv": "* for ExtUvLoop"
+      },
       "type": "library",
       "autoload": {
         "psr-4": {
@@ -1261,18 +1262,18 @@
         "reference": "59961cc4a5b14481728f07c591546be18fa3a5c7",
         "shasum": ""
       },
-            "require": {
-              "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
-              "fig/http-message-util": "^1.1",
-              "php": ">=5.3.0",
-              "psr/http-message": "^1.0",
-              "react/event-loop": "^1.2",
-              "react/promise": "^2.3 || ^1.2.1",
-              "react/promise-stream": "^1.1",
-              "react/socket": "^1.9",
-              "react/stream": "^1.2",
-              "ringcentral/psr7": "^1.2"
-            },
+      "require": {
+        "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+        "fig/http-message-util": "^1.1",
+        "php": ">=5.3.0",
+        "psr/http-message": "^1.0",
+        "react/event-loop": "^1.2",
+        "react/promise": "^2.3 || ^1.2.1",
+        "react/promise-stream": "^1.1",
+        "react/socket": "^1.9",
+        "react/stream": "^1.2",
+        "ringcentral/psr7": "^1.2"
+      },
             "require-dev": {
               "clue/block-react": "^1.5",
               "clue/http-proxy-react": "^1.7",
@@ -1376,15 +1377,15 @@
                 "MIT"
             ],
             "description": "Partial function application.",
-            "keywords": [
-                "functional-programming",
-                "partial"
-            ],
-            "support": {
-                "issues": "https://github.com/friends-of-reactphp/partial/issues",
-                "source": "https://github.com/friends-of-reactphp/partial/tree/v3.0.0"
-            },
-            "time": "2017-10-01T13:27:11+00:00"
+          "keywords": [
+            "functional-programming",
+            "partial"
+          ],
+          "support": {
+            "issues": "https://github.com/friends-of-reactphp/partial/issues",
+            "source": "https://github.com/friends-of-reactphp/partial/tree/v3.0.0"
+          },
+          "time": "2017-10-01T13:27:11+00:00"
         },
     {
       "name": "react/promise",
@@ -1400,21 +1401,21 @@
         "reference": "234f8fd1023c9158e2314fa9d7d0e6a83db42910",
         "shasum": ""
       },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-              "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.36"
-            },
-            "type": "library",
-            "autoload": {
-              "files": [
-                "src/functions_include.php"
-              ],
-              "psr-4": {
-                "React\\Promise\\": "src/"
-              }
-            },
+      "require": {
+        "php": ">=5.4.0"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.36"
+      },
+      "type": "library",
+      "autoload": {
+        "files": [
+          "src/functions_include.php"
+        ],
+        "psr-4": {
+          "React\\Promise\\": "src/"
+        }
+      },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -1476,17 +1477,17 @@
         "reference": "3ebd94fe0d8edbf44937948af28d02d5437e9949",
         "shasum": ""
       },
-            "require": {
-                "php": ">=5.3",
-                "react/promise": "^2.1 || ^1.2",
-                "react/stream": "^1.0 || ^0.7 || ^0.6 || ^0.5 || ^0.4.6"
-            },
-            "require-dev": {
-              "clue/block-react": "^1.0",
-              "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35",
-              "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
-              "react/promise-timer": "^1.0"
-            },
+      "require": {
+        "php": ">=5.3",
+        "react/promise": "^2.1 || ^1.2",
+        "react/stream": "^1.0 || ^0.7 || ^0.6 || ^0.5 || ^0.4.6"
+      },
+      "require-dev": {
+        "clue/block-react": "^1.0",
+        "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35",
+        "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
+        "react/promise-timer": "^1.0"
+      },
             "type": "library",
             "autoload": {
               "files": [
@@ -1522,16 +1523,16 @@
                 "homepage": "https://cboden.dev/"
               }
             ],
-            "description": "The missing link between Promise-land and Stream-land for ReactPHP",
-            "homepage": "https://github.com/reactphp/promise-stream",
-            "keywords": [
-                "Buffer",
-              "async",
-              "promise",
-              "reactphp",
-              "stream",
-              "unwrap"
-            ],
+      "description": "The missing link between Promise-land and Stream-land for ReactPHP",
+      "homepage": "https://github.com/reactphp/promise-stream",
+      "keywords": [
+        "Buffer",
+        "async",
+        "promise",
+        "reactphp",
+        "stream",
+        "unwrap"
+      ],
       "support": {
         "issues": "https://github.com/reactphp/promise-stream/issues",
         "source": "https://github.com/reactphp/promise-stream/tree/v1.3.0"
@@ -1562,23 +1563,23 @@
         "reference": "0bbbcc79589e5bfdddba68a287f1cb805581a479",
         "shasum": ""
       },
-            "require": {
-              "php": ">=5.3",
-              "react/event-loop": "^1.2",
-              "react/promise": "^3.0 || ^2.7.0 || ^1.2.1"
-            },
-            "require-dev": {
-              "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-              "files": [
-                "src/functions_include.php"
-              ],
-              "psr-4": {
-                "React\\Promise\\Timer\\": "src/"
-              }
-            },
+      "require": {
+        "php": ">=5.3",
+        "react/event-loop": "^1.2",
+        "react/promise": "^3.0 || ^2.7.0 || ^1.2.1"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
+      },
+      "type": "library",
+      "autoload": {
+        "files": [
+          "src/functions_include.php"
+        ],
+        "psr-4": {
+          "React\\Promise\\Timer\\": "src/"
+        }
+      },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -1605,16 +1606,16 @@
                 "homepage": "https://cboden.dev/"
               }
             ],
-            "description": "A trivial implementation of timeouts for Promises, built on top of ReactPHP.",
-            "homepage": "https://github.com/reactphp/promise-timer",
-            "keywords": [
-                "async",
-              "event-loop",
-              "promise",
-              "reactphp",
-              "timeout",
-              "timer"
-            ],
+      "description": "A trivial implementation of timeouts for Promises, built on top of ReactPHP.",
+      "homepage": "https://github.com/reactphp/promise-timer",
+      "keywords": [
+        "async",
+        "event-loop",
+        "promise",
+        "reactphp",
+        "timeout",
+        "timer"
+      ],
       "support": {
         "issues": "https://github.com/reactphp/promise-timer/issues",
         "source": "https://github.com/reactphp/promise-timer/tree/v1.8.0"
@@ -1645,20 +1646,20 @@
         "reference": "f474156aaab4f09041144fa8b57c7d70aed32a1c",
         "shasum": ""
       },
-            "require": {
-              "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
-              "php": ">=5.3.0",
-              "react/dns": "^1.8",
-              "react/event-loop": "^1.2",
-              "react/promise": "^2.6.0 || ^1.2.1",
-              "react/promise-timer": "^1.8",
-              "react/stream": "^1.2"
-            },
-            "require-dev": {
-              "clue/block-react": "^1.5",
-              "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35",
-              "react/promise-stream": "^1.2"
-            },
+      "require": {
+        "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+        "php": ">=5.3.0",
+        "react/dns": "^1.8",
+        "react/event-loop": "^1.2",
+        "react/promise": "^2.6.0 || ^1.2.1",
+        "react/promise-timer": "^1.8",
+        "react/stream": "^1.2"
+      },
+      "require-dev": {
+        "clue/block-react": "^1.5",
+        "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35",
+        "react/promise-stream": "^1.2"
+      },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -1705,16 +1706,16 @@
             },
             "funding": [
                 {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
+                  "url": "https://github.com/WyriHaximus",
+                  "type": "github"
                 },
-                {
-                    "url": "https://github.com/clue",
-                    "type": "github"
-                }
+              {
+                "url": "https://github.com/clue",
+                "type": "github"
+              }
             ],
       "time": "2022-01-14T10:14:32+00:00"
-        },
+    },
     {
       "name": "react/stream",
       "version": "v1.2.0",
@@ -1729,15 +1730,15 @@
         "reference": "7a423506ee1903e89f1e08ec5f0ed430ff784ae9",
         "shasum": ""
       },
-            "require": {
-                "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
-                "php": ">=5.3.8",
-              "react/event-loop": "^1.2"
-            },
-            "require-dev": {
-                "clue/stream-filter": "~1.2",
-              "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
-            },
+      "require": {
+        "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
+        "php": ">=5.3.8",
+        "react/event-loop": "^1.2"
+      },
+      "require-dev": {
+        "clue/stream-filter": "~1.2",
+        "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
+      },
       "type": "library",
       "autoload": {
         "psr-4": {
@@ -1797,16 +1798,16 @@
       ],
       "time": "2021-07-11T12:37:55+00:00"
     },
-        {
-            "name": "ringcentral/psr7",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ringcentral/psr7.git",
-                "reference": "360faaec4b563958b673fb52bbe94e37f14bc686"
-            },
-            "dist": {
-                "type": "zip",
+    {
+      "name": "ringcentral/psr7",
+      "version": "1.3.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/ringcentral/psr7.git",
+        "reference": "360faaec4b563958b673fb52bbe94e37f14bc686"
+      },
+      "dist": {
+        "type": "zip",
                 "url": "https://api.github.com/repos/ringcentral/psr7/zipball/360faaec4b563958b673fb52bbe94e37f14bc686",
                 "reference": "360faaec4b563958b673fb52bbe94e37f14bc686",
                 "shasum": ""
@@ -1848,40 +1849,40 @@
             ],
             "description": "PSR-7 message implementation",
             "keywords": [
-                "http",
-                "message",
-                "stream",
-                "uri"
+              "http",
+              "message",
+              "stream",
+              "uri"
             ],
-            "support": {
-                "source": "https://github.com/ringcentral/psr7/tree/master"
-            },
-            "time": "2018-05-29T20:21:04+00:00"
-        },
+      "support": {
+        "source": "https://github.com/ringcentral/psr7/tree/master"
+      },
+      "time": "2018-05-29T20:21:04+00:00"
+    },
     {
       "name": "symfony/deprecation-contracts",
-      "version": "v3.0.0",
+      "version": "v3.0.1",
       "source": {
         "type": "git",
         "url": "https://github.com/symfony/deprecation-contracts.git",
-        "reference": "c726b64c1ccfe2896cb7df2e1331c357ad1c8ced"
+        "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/c726b64c1ccfe2896cb7df2e1331c357ad1c8ced",
-        "reference": "c726b64c1ccfe2896cb7df2e1331c357ad1c8ced",
+        "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
+        "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
         "shasum": ""
       },
-            "require": {
-              "php": ">=8.0.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                  "dev-main": "3.0-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
+      "require": {
+        "php": ">=8.0.2"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-main": "3.0-dev"
+        },
+        "thanks": {
+          "name": "symfony/contracts",
                     "url": "https://github.com/symfony/contracts"
                 }
             },
@@ -1907,7 +1908,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-              "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.0"
+              "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.1"
             },
             "funding": [
                 {
@@ -1915,16 +1916,16 @@
                     "type": "custom"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
+                  "url": "https://github.com/fabpot",
+                  "type": "github"
                 },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+              }
             ],
-      "time": "2021-11-01T23:48:49+00:00"
-        },
+      "time": "2022-01-02T09:55:41+00:00"
+    },
     {
       "name": "symfony/options-resolver",
       "version": "v5.4.3",
@@ -1939,16 +1940,16 @@
         "reference": "cc1147cb11af1b43f503ac18f31aa3bec213aba8",
         "shasum": ""
       },
-            "require": {
-              "php": ">=7.2.5",
-              "symfony/deprecation-contracts": "^2.1|^3",
-              "symfony/polyfill-php73": "~1.0",
-              "symfony/polyfill-php80": "^1.16"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\OptionsResolver\\": ""
+      "require": {
+        "php": ">=7.2.5",
+        "symfony/deprecation-contracts": "^2.1|^3",
+        "symfony/polyfill-php73": "~1.0",
+        "symfony/polyfill-php80": "^1.16"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\OptionsResolver\\": ""
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
@@ -1984,16 +1985,16 @@
                     "type": "custom"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
+                  "url": "https://github.com/fabpot",
+                  "type": "github"
                 },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+              }
             ],
       "time": "2022-01-02T09:53:40+00:00"
-        },
+    },
     {
       "name": "symfony/polyfill-mbstring",
       "version": "v1.25.0",
@@ -2024,17 +2025,17 @@
         },
         "thanks": {
           "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "autoload": {
-              "files": [
-                "bootstrap.php"
-              ],
-              "psr-4": {
-                "Symfony\\Polyfill\\Mbstring\\": ""
-              }
-            },
+          "url": "https://github.com/symfony/polyfill"
+        }
+      },
+      "autoload": {
+        "files": [
+          "bootstrap.php"
+        ],
+        "psr-4": {
+          "Symfony\\Polyfill\\Mbstring\\": ""
+        }
+      },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -2067,16 +2068,16 @@
                     "type": "custom"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
+                  "url": "https://github.com/fabpot",
+                  "type": "github"
                 },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+              }
             ],
       "time": "2021-11-30T18:21:41+00:00"
-        },
+    },
     {
       "name": "symfony/polyfill-php73",
       "version": "v1.25.0",
@@ -2091,16 +2092,16 @@
         "reference": "cc5db0e22b3cb4111010e48785a97f670b350ca5",
         "shasum": ""
       },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.23-dev"
-                },
-                "thanks": {
-                    "name": "symfony/polyfill",
+      "require": {
+        "php": ">=7.1"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-main": "1.23-dev"
+        },
+        "thanks": {
+          "name": "symfony/polyfill",
                     "url": "https://github.com/symfony/polyfill"
                 }
             },
@@ -2146,16 +2147,16 @@
                     "type": "custom"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
+                  "url": "https://github.com/fabpot",
+                  "type": "github"
                 },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+              }
             ],
       "time": "2021-06-05T21:20:04+00:00"
-        },
+    },
     {
       "name": "symfony/polyfill-php80",
       "version": "v1.25.0",
@@ -2170,16 +2171,16 @@
         "reference": "4407588e0d3f1f52efb65fbe92babe41f37fe50c",
         "shasum": ""
       },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.23-dev"
-                },
-                "thanks": {
-                    "name": "symfony/polyfill",
+      "require": {
+        "php": ">=7.1"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-main": "1.23-dev"
+        },
+        "thanks": {
+          "name": "symfony/polyfill",
                     "url": "https://github.com/symfony/polyfill"
                 }
             },
@@ -2229,43 +2230,43 @@
                     "type": "custom"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
+                  "url": "https://github.com/fabpot",
+                  "type": "github"
                 },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+              }
             ],
       "time": "2022-03-04T08:16:47+00:00"
-        },
+    },
     {
       "name": "symfony/translation",
-      "version": "v6.0.6",
+      "version": "v6.0.8",
       "source": {
         "type": "git",
         "url": "https://github.com/symfony/translation.git",
-        "reference": "f6639cb9b5e0c57fe31e3263b900a77eedb0c908"
+        "reference": "3d38cf8f8834148c4457681d539bc204de701501"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/symfony/translation/zipball/f6639cb9b5e0c57fe31e3263b900a77eedb0c908",
-        "reference": "f6639cb9b5e0c57fe31e3263b900a77eedb0c908",
+        "url": "https://api.github.com/repos/symfony/translation/zipball/3d38cf8f8834148c4457681d539bc204de701501",
+        "reference": "3d38cf8f8834148c4457681d539bc204de701501",
         "shasum": ""
       },
-            "require": {
-              "php": ">=8.0.2",
-              "symfony/polyfill-mbstring": "~1.0",
-              "symfony/translation-contracts": "^2.3|^3.0"
-            },
-            "conflict": {
-              "symfony/config": "<5.4",
-              "symfony/console": "<5.4",
-              "symfony/dependency-injection": "<5.4",
-              "symfony/http-kernel": "<5.4",
-              "symfony/twig-bundle": "<5.4",
-              "symfony/yaml": "<5.4"
-            },
+      "require": {
+        "php": ">=8.0.2",
+        "symfony/polyfill-mbstring": "~1.0",
+        "symfony/translation-contracts": "^2.3|^3.0"
+      },
+      "conflict": {
+        "symfony/config": "<5.4",
+        "symfony/console": "<5.4",
+        "symfony/dependency-injection": "<5.4",
+        "symfony/http-kernel": "<5.4",
+        "symfony/twig-bundle": "<5.4",
+        "symfony/yaml": "<5.4"
+      },
             "provide": {
               "symfony/translation-implementation": "2.3|3.0"
             },
@@ -2316,7 +2317,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-              "source": "https://github.com/symfony/translation/tree/v6.0.6"
+              "source": "https://github.com/symfony/translation/tree/v6.0.8"
             },
             "funding": [
                 {
@@ -2324,40 +2325,40 @@
                     "type": "custom"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
+                  "url": "https://github.com/fabpot",
+                  "type": "github"
                 },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+              }
             ],
-      "time": "2022-03-02T12:58:14+00:00"
-        },
+      "time": "2022-04-22T08:18:02+00:00"
+    },
     {
       "name": "symfony/translation-contracts",
-      "version": "v3.0.0",
+      "version": "v3.0.1",
       "source": {
         "type": "git",
         "url": "https://github.com/symfony/translation-contracts.git",
-        "reference": "1b6ea5a7442af5a12dba3dbd6d71034b5b234e77"
+        "reference": "c4183fc3ef0f0510893cbeedc7718fb5cafc9ac9"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/1b6ea5a7442af5a12dba3dbd6d71034b5b234e77",
-        "reference": "1b6ea5a7442af5a12dba3dbd6d71034b5b234e77",
+        "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/c4183fc3ef0f0510893cbeedc7718fb5cafc9ac9",
+        "reference": "c4183fc3ef0f0510893cbeedc7718fb5cafc9ac9",
         "shasum": ""
       },
-            "require": {
-              "php": ">=8.0.2"
-            },
-            "suggest": {
-                "symfony/translation-implementation": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                  "dev-main": "3.0-dev"
+      "require": {
+        "php": ">=8.0.2"
+      },
+      "suggest": {
+        "symfony/translation-implementation": ""
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-main": "3.0-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -2394,7 +2395,7 @@
                 "standards"
             ],
             "support": {
-              "source": "https://github.com/symfony/translation-contracts/tree/v3.0.0"
+              "source": "https://github.com/symfony/translation-contracts/tree/v3.0.1"
             },
             "funding": [
                 {
@@ -2402,47 +2403,47 @@
                     "type": "custom"
                 },
                 {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
+                  "url": "https://github.com/fabpot",
+                  "type": "github"
                 },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+              }
             ],
-      "time": "2021-09-07T12:43:40+00:00"
-        },
+      "time": "2022-01-02T09:55:41+00:00"
+    },
     {
       "name": "team-reflex/discord-php",
-      "version": "v7.0.5",
+      "version": "v7.0.9",
       "source": {
         "type": "git",
         "url": "https://github.com/discord-php/DiscordPHP.git",
-        "reference": "0d75af9716e3fce2068192e68ccb6eb3a36adaad"
+        "reference": "78a71eed34fc4bd640a046d270270de97bc2f864"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/discord-php/DiscordPHP/zipball/0d75af9716e3fce2068192e68ccb6eb3a36adaad",
-        "reference": "0d75af9716e3fce2068192e68ccb6eb3a36adaad",
+        "url": "https://api.github.com/repos/discord-php/DiscordPHP/zipball/78a71eed34fc4bd640a046d270270de97bc2f864",
+        "reference": "78a71eed34fc4bd640a046d270270de97bc2f864",
         "shasum": ""
       },
-            "require": {
-              "discord-php/http": "^9.0.9",
-              "discord/interactions": "^2.2",
-              "ext-json": "*",
-              "ext-zlib": "*",
-              "mollie/polyfill-libsodium": "^1.1",
-              "monolog/monolog": "^2.1",
-              "nesbot/carbon": "^2.38",
-              "php": "^7.4|^8.0",
-              "ratchet/pawl": "^0.4.1",
-              "react/child-process": "^0.6.2",
-              "react/datagram": "1.5.*",
-              "react/http": "^1.1",
-              "react/partial": "^3.0",
-              "symfony/options-resolver": "^5.1.3",
-              "trafficcophp/bytebuffer": "^0.3"
-            },
+      "require": {
+        "discord-php/http": "^9.0.10",
+        "discord/interactions": "^2.2",
+        "ext-json": "*",
+        "ext-zlib": "*",
+        "mollie/polyfill-libsodium": "^1.1",
+        "monolog/monolog": "^2.1",
+        "nesbot/carbon": "^2.38",
+        "php": "^7.4|^8.0",
+        "ratchet/pawl": "^0.4.1",
+        "react/child-process": "^0.6.2",
+        "react/datagram": "1.5.*",
+        "react/http": "^1.1",
+        "react/partial": "^3.0",
+        "symfony/options-resolver": "^5.1.3",
+        "trafficcophp/bytebuffer": "^0.3"
+      },
             "require-dev": {
               "davidcole1340/reactsh": "dev-master",
               "friendsofphp/php-cs-fixer": "^3",
@@ -2478,9 +2479,9 @@
             "description": "An unofficial API to interact with the voice and text service Discord.",
             "support": {
                 "issues": "https://github.com/discord-php/DiscordPHP/issues",
-              "source": "https://github.com/discord-php/DiscordPHP/tree/v7.0.5"
+              "source": "https://github.com/discord-php/DiscordPHP/tree/v7.0.9"
             },
-      "time": "2022-03-11T11:29:30+00:00"
+      "time": "2022-04-01T09:43:29+00:00"
         },
         {
             "name": "trafficcophp/bytebuffer",
@@ -2569,16 +2570,16 @@
                     "email": "jiten.adhikary@gmail.com"
                 }
             ],
-            "description": "Lightweight JSON comment stripper library for PHP",
-            "keywords": [
-                "comment",
-                "json",
-                "strip-comment"
-            ],
-            "support": {
-                "issues": "https://github.com/adhocore/php-json-comment/issues",
-                "source": "https://github.com/adhocore/php-json-comment/tree/1.1.2"
-            },
+          "description": "Lightweight JSON comment stripper library for PHP",
+          "keywords": [
+            "comment",
+            "json",
+            "strip-comment"
+          ],
+          "support": {
+            "issues": "https://github.com/adhocore/php-json-comment/issues",
+            "source": "https://github.com/adhocore/php-json-comment/tree/1.1.2"
+          },
           "funding": [
             {
               "url": "https://paypal.me/ji10",
@@ -2775,42 +2776,42 @@
       },
       {
         "name": "pocketmine/bedrock-data",
-        "version": "1.6.0+bedrock-1.18.10",
+        "version": "1.7.0+bedrock-1.18.30",
         "source": {
           "type": "git",
           "url": "https://github.com/pmmp/BedrockData.git",
-          "reference": "e98c511584a7bd58a95986374d2df4b04c6a2ba0"
+          "reference": "c8f323ff0cbdb36a5d95e7e4a23969f562445be0"
         },
         "dist": {
           "type": "zip",
-          "url": "https://api.github.com/repos/pmmp/BedrockData/zipball/e98c511584a7bd58a95986374d2df4b04c6a2ba0",
-          "reference": "e98c511584a7bd58a95986374d2df4b04c6a2ba0",
+          "url": "https://api.github.com/repos/pmmp/BedrockData/zipball/c8f323ff0cbdb36a5d95e7e4a23969f562445be0",
+          "reference": "c8f323ff0cbdb36a5d95e7e4a23969f562445be0",
           "shasum": ""
         },
         "type": "library",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-          "LGPL-3.0"
+          "CC0-1.0"
         ],
         "description": "Blobs of data generated from Minecraft: Bedrock Edition, used by PocketMine-MP",
         "support": {
           "issues": "https://github.com/pmmp/BedrockData/issues",
-          "source": "https://github.com/pmmp/BedrockData/tree/bedrock-1.18.10"
+          "source": "https://github.com/pmmp/BedrockData/tree/bedrock-1.18.30"
         },
-        "time": "2022-02-08T19:13:47+00:00"
+        "time": "2022-04-20T12:40:59+00:00"
       },
       {
         "name": "pocketmine/bedrock-protocol",
-        "version": "8.0.1+bedrock-1.18.10",
+        "version": "9.0.1+bedrock-1.18.30",
         "source": {
           "type": "git",
           "url": "https://github.com/pmmp/BedrockProtocol.git",
-          "reference": "a740f6095b35278c0e0dac6db84a5e4d2456b113"
+          "reference": "9d3cc87c4d26c002dd42aa9af20c0cd47a72018e"
         },
         "dist": {
           "type": "zip",
-          "url": "https://api.github.com/repos/pmmp/BedrockProtocol/zipball/a740f6095b35278c0e0dac6db84a5e4d2456b113",
-          "reference": "a740f6095b35278c0e0dac6db84a5e4d2456b113",
+          "url": "https://api.github.com/repos/pmmp/BedrockProtocol/zipball/9d3cc87c4d26c002dd42aa9af20c0cd47a72018e",
+          "reference": "9d3cc87c4d26c002dd42aa9af20c0cd47a72018e",
           "shasum": ""
         },
         "require": {
@@ -2824,7 +2825,7 @@
           "ramsey/uuid": "^4.1"
         },
         "require-dev": {
-          "phpstan/phpstan": "1.4.5",
+          "phpstan/phpstan": "1.5.7",
           "phpstan/phpstan-phpunit": "^1.0.0",
           "phpstan/phpstan-strict-rules": "^1.0.0",
           "phpunit/phpunit": "^9.5"
@@ -2842,9 +2843,9 @@
         "description": "An implementation of the Minecraft: Bedrock Edition protocol in PHP",
         "support": {
           "issues": "https://github.com/pmmp/BedrockProtocol/issues",
-          "source": "https://github.com/pmmp/BedrockProtocol/tree/8.0.1+bedrock-1.18.10"
+          "source": "https://github.com/pmmp/BedrockProtocol/tree/9.0.1+bedrock-1.18.30"
         },
-        "time": "2022-02-21T03:31:48+00:00"
+        "time": "2022-04-23T14:48:16+00:00"
       },
       {
         "name": "pocketmine/binaryutils",
@@ -2860,17 +2861,17 @@
           "reference": "5ac7eea91afbad8dc498f5ce34ce6297d5e6ea9a",
           "shasum": ""
         },
-            "require": {
-              "php": "^7.4 || ^8.0",
-              "php-64bit": "*"
-            },
-            "require-dev": {
-              "phpstan/extension-installer": "^1.0",
-              "phpstan/phpstan": "1.3.0",
-              "phpstan/phpstan-phpunit": "^1.0",
-              "phpstan/phpstan-strict-rules": "^1.0.0",
-              "phpunit/phpunit": "^9.5"
-            },
+        "require": {
+          "php": "^7.4 || ^8.0",
+          "php-64bit": "*"
+        },
+        "require-dev": {
+          "phpstan/extension-installer": "^1.0",
+          "phpstan/phpstan": "1.3.0",
+          "phpstan/phpstan-phpunit": "^1.0",
+          "phpstan/phpstan-strict-rules": "^1.0.0",
+          "phpunit/phpunit": "^9.5"
+        },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2928,15 +2929,15 @@
             "authors": [
                 {
                     "name": "Chris Wright",
-                    "email": "cw@daverandom.com"
+                  "email": "cw@daverandom.com"
                 }
             ],
-            "description": "Fork of daverandom/callback-validator - Tools for validating callback signatures",
-            "support": {
-                "issues": "https://github.com/pmmp/CallbackValidator/issues",
-                "source": "https://github.com/pmmp/CallbackValidator/tree/1.0.3"
-            },
-            "time": "2020-12-11T01:45:37+00:00"
+          "description": "Fork of daverandom/callback-validator - Tools for validating callback signatures",
+          "support": {
+            "issues": "https://github.com/pmmp/CallbackValidator/issues",
+            "source": "https://github.com/pmmp/CallbackValidator/tree/1.0.3"
+          },
+          "time": "2020-12-11T01:45:37+00:00"
         },
       {
         "name": "pocketmine/classloader",
@@ -2952,26 +2953,26 @@
           "reference": "49ea303993efdfb39cd302e2156d50aa78209e78",
           "shasum": ""
         },
-            "require": {
-              "ext-pthreads": "~3.2.0 || ^4.0",
-              "ext-reflection": "*",
-              "php": "^8.0"
-            },
-            "conflict": {
-                "pocketmine/spl": "<0.4"
-            },
-            "require-dev": {
-              "phpstan/extension-installer": "^1.0",
-              "phpstan/phpstan": "0.12.99",
-              "phpstan/phpstan-strict-rules": "^0.12.4",
-              "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                  "./src"
-                ]
-            },
+        "require": {
+          "ext-pthreads": "~3.2.0 || ^4.0",
+          "ext-reflection": "*",
+          "php": "^8.0"
+        },
+        "conflict": {
+          "pocketmine/spl": "<0.4"
+        },
+        "require-dev": {
+          "phpstan/extension-installer": "^1.0",
+          "phpstan/phpstan": "0.12.99",
+          "phpstan/phpstan-strict-rules": "^0.12.4",
+          "phpunit/phpunit": "^9.5"
+        },
+        "type": "library",
+        "autoload": {
+          "classmap": [
+            "./src"
+          ]
+        },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
           "LGPL-3.0"
@@ -3062,16 +3063,16 @@
       },
       {
         "name": "pocketmine/locale-data",
-        "version": "2.4.3",
+        "version": "2.5.0",
         "source": {
           "type": "git",
           "url": "https://github.com/pmmp/Language.git",
-          "reference": "4d0b081f1a79407e087968ea76aaf330db6ea2b5"
+          "reference": "df6fc7f2b48850b306c60466a11f7a27bb8fe1de"
         },
         "dist": {
           "type": "zip",
-          "url": "https://api.github.com/repos/pmmp/Language/zipball/4d0b081f1a79407e087968ea76aaf330db6ea2b5",
-          "reference": "4d0b081f1a79407e087968ea76aaf330db6ea2b5",
+          "url": "https://api.github.com/repos/pmmp/Language/zipball/df6fc7f2b48850b306c60466a11f7a27bb8fe1de",
+          "reference": "df6fc7f2b48850b306c60466a11f7a27bb8fe1de",
           "shasum": ""
         },
         "type": "library",
@@ -3079,9 +3080,9 @@
         "description": "Language resources used by PocketMine-MP",
         "support": {
           "issues": "https://github.com/pmmp/Language/issues",
-          "source": "https://github.com/pmmp/Language/tree/2.4.3"
+          "source": "https://github.com/pmmp/Language/tree/2.5.0"
         },
-        "time": "2022-01-25T23:18:24+00:00"
+        "time": "2022-04-01T22:36:58+00:00"
       },
       {
         "name": "pocketmine/log",
@@ -3097,16 +3098,16 @@
           "reference": "e6c912c0f9055c81d23108ec2d179b96f404c043",
           "shasum": ""
         },
-            "require": {
-              "php": "^7.4 || ^8.0"
-            },
-            "conflict": {
-                "pocketmine/spl": "<0.4"
-            },
-            "require-dev": {
-              "phpstan/phpstan": "0.12.88",
-              "phpstan/phpstan-strict-rules": "^0.12.2"
-            },
+        "require": {
+          "php": "^7.4 || ^8.0"
+        },
+        "conflict": {
+          "pocketmine/spl": "<0.4"
+        },
+        "require-dev": {
+          "phpstan/phpstan": "0.12.88",
+          "phpstan/phpstan-strict-rules": "^0.12.2"
+        },
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -3114,16 +3115,16 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "description": "Logging components used by PocketMine-MP and related projects",
-            "support": {
-                "issues": "https://github.com/pmmp/Log/issues",
-              "source": "https://github.com/pmmp/Log/tree/0.4.0"
-            },
-        "time": "2021-06-18T19:08:09+00:00"
+        "license": [
+          "LGPL-3.0"
+        ],
+        "description": "Logging components used by PocketMine-MP and related projects",
+        "support": {
+          "issues": "https://github.com/pmmp/Log/issues",
+          "source": "https://github.com/pmmp/Log/tree/0.4.0"
         },
+        "time": "2021-06-18T19:08:09+00:00"
+      },
       {
         "name": "pocketmine/log-pthreads",
         "version": "0.4.0",
@@ -3138,19 +3139,19 @@
           "reference": "61f709e8cf36bcc24e4efe02acded680a1ce23cd",
           "shasum": ""
         },
-            "require": {
-              "ext-pthreads": "~3.2.0 || ^4.0",
-              "php": "^7.4 || ^8.0",
-              "pocketmine/log": "^0.4.0"
-            },
-            "conflict": {
-                "pocketmine/spl": "<0.4"
-            },
-            "require-dev": {
-              "phpstan/extension-installer": "^1.0",
-              "phpstan/phpstan": "0.12.88",
-              "phpstan/phpstan-strict-rules": "^0.12.4"
-            },
+        "require": {
+          "ext-pthreads": "~3.2.0 || ^4.0",
+          "php": "^7.4 || ^8.0",
+          "pocketmine/log": "^0.4.0"
+        },
+        "conflict": {
+          "pocketmine/spl": "<0.4"
+        },
+        "require-dev": {
+          "phpstan/extension-installer": "^1.0",
+          "phpstan/phpstan": "0.12.88",
+          "phpstan/phpstan-strict-rules": "^0.12.4"
+        },
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -3158,16 +3159,16 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "description": "Logging components specialized for pthreads used by PocketMine-MP and related projects",
-            "support": {
-                "issues": "https://github.com/pmmp/LogPthreads/issues",
-              "source": "https://github.com/pmmp/LogPthreads/tree/0.4.0"
-            },
-        "time": "2021-11-01T21:42:09+00:00"
+        "license": [
+          "LGPL-3.0"
+        ],
+        "description": "Logging components specialized for pthreads used by PocketMine-MP and related projects",
+        "support": {
+          "issues": "https://github.com/pmmp/LogPthreads/issues",
+          "source": "https://github.com/pmmp/LogPthreads/tree/0.4.0"
         },
+        "time": "2021-11-01T21:42:09+00:00"
+      },
       {
         "name": "pocketmine/math",
         "version": "0.4.2",
@@ -3182,16 +3183,16 @@
           "reference": "aacc3759a508a69dfa5bc4dfa770ab733c5c94bf",
           "shasum": ""
         },
-            "require": {
-              "php": "^8.0",
-              "php-64bit": "*"
-            },
-            "require-dev": {
-              "phpstan/extension-installer": "^1.0",
-              "phpstan/phpstan": "1.2.0",
-              "phpstan/phpstan-strict-rules": "^1.0",
-              "phpunit/phpunit": "^8.5 || ^9.5"
-            },
+        "require": {
+          "php": "^8.0",
+          "php-64bit": "*"
+        },
+        "require-dev": {
+          "phpstan/extension-installer": "^1.0",
+          "phpstan/phpstan": "1.2.0",
+          "phpstan/phpstan-strict-rules": "^1.0",
+          "phpunit/phpunit": "^8.5 || ^9.5"
+        },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3199,16 +3200,16 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "description": "PHP library containing math related code used in PocketMine-MP",
-            "support": {
-                "issues": "https://github.com/pmmp/Math/issues",
-              "source": "https://github.com/pmmp/Math/tree/0.4.2"
-            },
-        "time": "2021-12-05T01:15:17+00:00"
+        "license": [
+          "LGPL-3.0"
+        ],
+        "description": "PHP library containing math related code used in PocketMine-MP",
+        "support": {
+          "issues": "https://github.com/pmmp/Math/issues",
+          "source": "https://github.com/pmmp/Math/tree/0.4.2"
         },
+        "time": "2021-12-05T01:15:17+00:00"
+      },
       {
         "name": "pocketmine/nbt",
         "version": "0.3.2",
@@ -3223,17 +3224,17 @@
           "reference": "3e0d9ef6b6c5fb45e3745a121296e75631b3eefe",
           "shasum": ""
         },
-            "require": {
-              "php": "^7.4 || ^8.0",
-              "php-64bit": "*",
-              "pocketmine/binaryutils": "^0.2.0"
-            },
-            "require-dev": {
-              "phpstan/extension-installer": "^1.0",
-              "phpstan/phpstan": "1.2.0",
-              "phpstan/phpstan-strict-rules": "^1.0",
-              "phpunit/phpunit": "^9.5"
-            },
+        "require": {
+          "php": "^7.4 || ^8.0",
+          "php-64bit": "*",
+          "pocketmine/binaryutils": "^0.2.0"
+        },
+        "require-dev": {
+          "phpstan/extension-installer": "^1.0",
+          "phpstan/phpstan": "1.2.0",
+          "phpstan/phpstan-strict-rules": "^1.0",
+          "phpunit/phpunit": "^9.5"
+        },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3241,81 +3242,81 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "description": "PHP library for working with Named Binary Tags",
-            "support": {
-                "issues": "https://github.com/pmmp/NBT/issues",
-              "source": "https://github.com/pmmp/NBT/tree/0.3.2"
-            },
-        "time": "2021-12-16T01:02:37+00:00"
+        "license": [
+          "LGPL-3.0"
+        ],
+        "description": "PHP library for working with Named Binary Tags",
+        "support": {
+          "issues": "https://github.com/pmmp/NBT/issues",
+          "source": "https://github.com/pmmp/NBT/tree/0.3.2"
         },
+        "time": "2021-12-16T01:02:37+00:00"
+      },
       {
         "name": "pocketmine/pocketmine-mp",
-        "version": "4.2.5",
+        "version": "4.3.1",
         "source": {
           "type": "git",
           "url": "https://github.com/pmmp/PocketMine-MP.git",
-          "reference": "a6cb3313b05fa103ec0b85767e04a6ad9f693149"
+          "reference": "f7dce4af8802ce28a8286e1c8002af19cf986c62"
         },
         "dist": {
           "type": "zip",
-          "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/a6cb3313b05fa103ec0b85767e04a6ad9f693149",
-          "reference": "a6cb3313b05fa103ec0b85767e04a6ad9f693149",
+          "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/f7dce4af8802ce28a8286e1c8002af19cf986c62",
+          "reference": "f7dce4af8802ce28a8286e1c8002af19cf986c62",
           "shasum": ""
         },
-            "require": {
-              "adhocore/json-comment": "^1.1",
-              "composer-runtime-api": "^2.0",
-              "ext-chunkutils2": "^0.3.1",
-              "ext-crypto": "^0.3.1",
-              "ext-ctype": "*",
-              "ext-curl": "*",
-              "ext-date": "*",
-              "ext-gmp": "*",
-              "ext-hash": "*",
-              "ext-igbinary": "^3.0.1",
-              "ext-json": "*",
-              "ext-leveldb": "^0.2.1 || ^0.3.0",
-              "ext-mbstring": "*",
-              "ext-morton": "^0.1.0",
-              "ext-openssl": "*",
-              "ext-pcre": "*",
-              "ext-phar": "*",
-              "ext-pthreads": "^4.0",
-              "ext-reflection": "*",
-              "ext-simplexml": "*",
-              "ext-sockets": "*",
-              "ext-spl": "*",
-              "ext-yaml": ">=2.0.0",
-              "ext-zip": "*",
-              "ext-zlib": ">=1.2.11",
-              "fgrosse/phpasn1": "^2.3",
-              "netresearch/jsonmapper": "^4.0",
-              "php": "^8.0",
-              "php-64bit": "*",
-              "pocketmine/bedrock-data": "~1.6.0+bedrock-1.18.10",
-              "pocketmine/bedrock-protocol": "~8.0.0+bedrock-1.18.10",
-              "pocketmine/binaryutils": "^0.2.1",
-              "pocketmine/callback-validator": "^1.0.2",
-              "pocketmine/classloader": "^0.2.0",
-              "pocketmine/color": "^0.2.0",
-              "pocketmine/errorhandler": "^0.6.0",
-              "pocketmine/locale-data": "~2.4.2",
-              "pocketmine/log": "^0.4.0",
-              "pocketmine/log-pthreads": "^0.4.0",
-              "pocketmine/math": "^0.4.0",
-              "pocketmine/nbt": "^0.3.2",
-              "pocketmine/raklib": "^0.14.2",
-              "pocketmine/raklib-ipc": "^0.1.0",
-              "pocketmine/snooze": "^0.3.0",
-              "ramsey/uuid": "^4.1",
-              "webmozart/path-util": "^2.3"
-            },
+        "require": {
+          "adhocore/json-comment": "^1.1",
+          "composer-runtime-api": "^2.0",
+          "ext-chunkutils2": "^0.3.1",
+          "ext-crypto": "^0.3.1",
+          "ext-ctype": "*",
+          "ext-curl": "*",
+          "ext-date": "*",
+          "ext-gmp": "*",
+          "ext-hash": "*",
+          "ext-igbinary": "^3.0.1",
+          "ext-json": "*",
+          "ext-leveldb": "^0.2.1 || ^0.3.0",
+          "ext-mbstring": "*",
+          "ext-morton": "^0.1.0",
+          "ext-openssl": "*",
+          "ext-pcre": "*",
+          "ext-phar": "*",
+          "ext-pthreads": "^4.0",
+          "ext-reflection": "*",
+          "ext-simplexml": "*",
+          "ext-sockets": "*",
+          "ext-spl": "*",
+          "ext-yaml": ">=2.0.0",
+          "ext-zip": "*",
+          "ext-zlib": ">=1.2.11",
+          "fgrosse/phpasn1": "^2.3",
+          "netresearch/jsonmapper": "^4.0",
+          "php": "^8.0",
+          "php-64bit": "*",
+          "pocketmine/bedrock-data": "~1.7.0+bedrock-1.18.30",
+          "pocketmine/bedrock-protocol": "~9.0.0+bedrock-1.18.30",
+          "pocketmine/binaryutils": "^0.2.1",
+          "pocketmine/callback-validator": "^1.0.2",
+          "pocketmine/classloader": "^0.2.0",
+          "pocketmine/color": "^0.2.0",
+          "pocketmine/errorhandler": "^0.6.0",
+          "pocketmine/locale-data": "~2.5.0",
+          "pocketmine/log": "^0.4.0",
+          "pocketmine/log-pthreads": "^0.4.0",
+          "pocketmine/math": "^0.4.0",
+          "pocketmine/nbt": "^0.3.2",
+          "pocketmine/raklib": "^0.14.2",
+          "pocketmine/raklib-ipc": "^0.1.0",
+          "pocketmine/snooze": "^0.3.0",
+          "ramsey/uuid": "^4.1",
+          "webmozart/path-util": "^2.3"
+        },
             "require-dev": {
-              "phpstan/phpstan": "1.4.10",
-              "phpstan/phpstan-phpunit": "^1.0.0",
+              "phpstan/phpstan": "1.5.7",
+              "phpstan/phpstan-phpunit": "^1.1.0",
               "phpstan/phpstan-strict-rules": "^1.0.0",
               "phpunit/phpunit": "^9.2"
             },
@@ -3355,7 +3356,7 @@
         "description": "A server software for Minecraft: Bedrock Edition written in PHP",
         "homepage": "https://pmmp.io",
         "support": {
-          "source": "https://github.com/pmmp/PocketMine-MP/tree/4.2.5",
+          "source": "https://github.com/pmmp/PocketMine-MP/tree/4.3.1",
           "issues": "https://github.com/pmmp/PocketMine-MP/issues"
         },
         "funding": [
@@ -3363,45 +3364,45 @@
             "type": "patreon",
             "url": "https://www.patreon.com/pocketminemp"
           },
-                {
-                    "type": "custom",
-                    "url": "https://github.com/pmmp/PocketMine-MP#donate"
-                }
-            ],
-        "time": "2022-03-28T15:34:57+00:00"
-        },
+          {
+            "type": "custom",
+            "url": "https://github.com/pmmp/PocketMine-MP#donate"
+          }
+        ],
+        "time": "2022-04-23T15:03:14+00:00"
+      },
       {
         "name": "pocketmine/raklib",
-        "version": "0.14.3",
+        "version": "0.14.4",
         "source": {
           "type": "git",
           "url": "https://github.com/pmmp/RakLib.git",
-          "reference": "4798576fec0364266dce23b368a7fec5e5de7927"
+          "reference": "1ea8e3b95a1b6bf785dc27d76578657be4185f42"
         },
         "dist": {
           "type": "zip",
-          "url": "https://api.github.com/repos/pmmp/RakLib/zipball/4798576fec0364266dce23b368a7fec5e5de7927",
-          "reference": "4798576fec0364266dce23b368a7fec5e5de7927",
+          "url": "https://api.github.com/repos/pmmp/RakLib/zipball/1ea8e3b95a1b6bf785dc27d76578657be4185f42",
+          "reference": "1ea8e3b95a1b6bf785dc27d76578657be4185f42",
           "shasum": ""
         },
-            "require": {
-              "ext-sockets": "*",
-              "php": "^8.0",
-              "php-64bit": "*",
-              "php-ipv6": "*",
-              "pocketmine/binaryutils": "^0.2.0",
-              "pocketmine/log": "^0.3.0 || ^0.4.0"
-            },
-            "require-dev": {
-              "phpstan/phpstan": "1.3.3",
-              "phpstan/phpstan-strict-rules": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                  "raklib\\": "src/"
-                }
-            },
+        "require": {
+          "ext-sockets": "*",
+          "php": "^8.0",
+          "php-64bit": "*",
+          "php-ipv6": "*",
+          "pocketmine/binaryutils": "^0.2.0",
+          "pocketmine/log": "^0.3.0 || ^0.4.0"
+        },
+        "require-dev": {
+          "phpstan/phpstan": "1.5.4",
+          "phpstan/phpstan-strict-rules": "^1.0"
+        },
+        "type": "library",
+        "autoload": {
+          "psr-4": {
+            "raklib\\": "src/"
+          }
+        },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
           "GPL-3.0"
@@ -3409,9 +3410,9 @@
         "description": "A RakNet server implementation written in PHP",
         "support": {
           "issues": "https://github.com/pmmp/RakLib/issues",
-          "source": "https://github.com/pmmp/RakLib/tree/0.14.3"
+          "source": "https://github.com/pmmp/RakLib/tree/0.14.4"
         },
-        "time": "2022-01-10T21:29:48+00:00"
+        "time": "2022-04-17T18:42:17+00:00"
       },
       {
         "name": "pocketmine/raklib-ipc",
@@ -3468,21 +3469,21 @@
           "reference": "0ac8fc2a781c419a1f64ebca4d5835028f59e29b",
           "shasum": ""
         },
-            "require": {
-              "ext-pthreads": "~3.2.0 || ^4.0",
-              "php-64bit": "^7.3 || ^8.0"
-            },
-            "require-dev": {
-              "phpstan/extension-installer": "^1.0",
-              "phpstan/phpstan": "0.12.99",
-              "phpstan/phpstan-strict-rules": "^0.12.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                  "pocketmine\\snooze\\": "src/"
-                }
-            },
+        "require": {
+          "ext-pthreads": "~3.2.0 || ^4.0",
+          "php-64bit": "^7.3 || ^8.0"
+        },
+        "require-dev": {
+          "phpstan/extension-installer": "^1.0",
+          "phpstan/phpstan": "0.12.99",
+          "phpstan/phpstan-strict-rules": "^0.12.4"
+        },
+        "type": "library",
+        "autoload": {
+          "psr-4": {
+            "pocketmine\\snooze\\": "src/"
+          }
+        },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
           "LGPL-3.0"
@@ -3938,12 +3939,14 @@
         "time": "2015-12-17T08:42:14+00:00"
       }
     ],
-    "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
-    "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-  "plugin-api-version": "2.2.0"
+  "aliases": [],
+  "minimum-stability": "stable",
+  "stability-flags": [],
+  "prefer-stable": false,
+  "prefer-lowest": false,
+  "platform": {
+    "ext-pthreads": "*"
+  },
+  "platform-dev": [],
+  "plugin-api-version": "2.3.0"
 }

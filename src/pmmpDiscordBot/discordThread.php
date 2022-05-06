@@ -2,15 +2,19 @@
 
 namespace pmmpDiscordBot;
 
+use Discord\Builders\MessageBuilder;
+use Discord\Discord;
+use Discord\Helpers\Collection;
+use Discord\Parts\Channel\Channel;
 use Discord\Parts\Channel\Message;
-use Discord\WebSockets\Event;
+use Discord\Parts\Embed\Embed;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use pocketmine\console\ConsoleCommandSender;
+use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\Server;
 use pocketmine\snooze\SleeperNotifier;
 use pocketmine\thread\Thread;
-use pocketmine\utils\TextFormat;
 use React\EventLoop\Loop;
 
 class discordThread extends Thread{
@@ -19,6 +23,12 @@ class discordThread extends Thread{
 	public $started = false;
 	public $content;
 	public $no_vendor;
+	/** @var string */
+	public $games = "no games";
+	/** @var int */
+	public $playercount = 0;
+	/** @var string */
+	public $version;
 	private $token;
 	public $send_guildId;
 	public $send_channelId;
@@ -30,6 +40,8 @@ class discordThread extends Thread{
 	protected $D2P_Queue;
 	protected $P2D_Queue;
 
+	protected $stoped = false;
+
 	/** pmmp api */
 
 	/** @var \ThreadedLogger */
@@ -38,6 +50,8 @@ class discordThread extends Thread{
 	protected $notifier;
 	/** @var ConsoleCommandSender */
 	private static $consoleSender;
+	/** @var ?Message */
+	private static $targetmessage;
 
 	public function __construct($file, $no_vendor, string $token, string $send_guildId, string $send_channelId, string $receive_channelId, int $send_interval = 1, bool $debug = false){
 		$this->file = $file;
@@ -57,9 +71,11 @@ class discordThread extends Thread{
 		$server = Server::getInstance();
 		self::$consoleSender = new ConsoleCommandSender($server, $server->getLanguage());
 
-		$this->logger = Server::getInstance()->getLogger();
+		$this->logger = new \PrefixedLogger(Server::getInstance()->getLogger(), "StatusBot");
 		$this->initSleeperNotifier();
 		$this->start();
+
+		$this->version = ProtocolInfo::MINECRAFT_VERSION;
 	}
 
 	private function initSleeperNotifier() : void{
@@ -96,60 +112,102 @@ class discordThread extends Thread{
 
 		$timer = $loop->addPeriodicTimer(1, function() use ($discord){
 			if($this->isKilled){
-				$discord->close();
-				$discord->loop->stop();
+				$this->onStop($discord);
 				$this->started = false;
 				return;
 			}
+		});
+
+		$timer = $loop->addPeriodicTimer(60, function() use ($discord){
+			if($this->isKilled) return;
 			$this->task($discord);
 		});
 
 		unset($this->token);
 
-		$discord->on("ready", function($discord){
+		$discord->on("ready", function(Discord $discord){
 			$this->started = true;
 			$this->logger->info("Bot is ready.");
 			// Listen for events here
 			$botUserId = $discord->user->id;
 			$receive_channelId = $this->receive_channelId;
 
-			$discord->on(Event::MESSAGE_CREATE, function(Message $message) use ($botUserId, $receive_channelId){
-				if($message->channel_id === $receive_channelId){
-					if($message->type !== Message::TYPE_NORMAL) return;//join message etc...
-					if($message->author->id === $botUserId) return;
-					$this->D2P_Queue[] = serialize([
-						'username' => $message->author->username,
-						'content' => $message->content
-					]);
-					/** @see onWake() */
-					$this->notifier->wakeupSleeper();
+			/** @var Channel $channel */
+			$channel = $discord->getChannel($this->send_channelId);
+			$channel->getMessageHistory([
+				'limit' => 3,
+			])->done(function(Collection $messages) use ($discord, $channel){
+				foreach($messages as $message){
+					/** @var Message $message */
+					if($message->author->id === $discord->id){
+						self::$targetmessage = $message;
+						$this->task($discord);
+						break;
+					}
+				}
+				if(!isset(self::$targetmessage)){
+					$embed = $this->getEmbed($discord, true);
+					$channel->sendMessage("", false, $embed)->then(function(Message $message) use ($discord){
+						self::$targetmessage = $message;
+						$this->task($discord);
+					});
 				}
 			});
+//			$discord->on(Event::MESSAGE_CREATE, function(Message $message) use ($botUserId, $receive_channelId){
+
+//				$message->
+//				if($message->channel_id === $receive_channelId){
+//					if($message->type !== Message::TYPE_NORMAL) return;//join message etc...
+//					if($message->author->id === $botUserId) return;
+//					$this->D2P_Queue[] = serialize([
+//						'username' => $message->author->username,
+//						'content' => $message->content
+//					]);
+//					/** @see onWake() */
+//					$this->notifier->wakeupSleeper();
+//				}
+//			});
 		});
 		$discord->run();
 	}
 
-	public function task($discord){
-		if(!$this->started) return;
+	private function task(Discord $discord){
+		if(!$this->started||!isset(self::$targetmessage)) return;
+		var_dump("onTask");
+		$embed = $this->getEmbed($discord, true);
+		$builder = MessageBuilder::new()->setEmbeds([$embed]);
+		self::$targetmessage->edit($builder);
 
-		$guild = $discord->guilds->get('id', $this->send_guildId);
-		$channel = $guild->channels->get('id', $this->send_channelId);
+	}
 
-		$send = "";
-
-		while(count($this->P2D_Queue) > 0){
-			$message = unserialize($this->P2D_Queue->shift());//
-			$message = preg_replace(['/\]0;.*\%/', '/[\x07]/', "/Server thread\//"], '', TextFormat::clean(substr($message, 0, 1900)))."\n";//processtile,ANSIコードの削除を実施致します...
-			if($message === "") continue;
-			$send .= $message;
-			if(strlen($send) >= 1800){
-				break;
-			}
+	private function onStop(Discord $discord){
+		if($this->stoped){
+			$this->logger->info("killing discord thread");
+			$discord->close();
+			$discord->loop->stop();
+			return;
 		}
-		if($send !== ""){
-			$channel->sendMessage("```".$send."```");
-		}
+		if(!isset(self::$targetmessage)) return;
+		$this->logger->info("Editing server status offline");
+		$embed = $this->getEmbed($discord, false);
+		$builder = MessageBuilder::new()->setEmbeds([$embed]);
+		self::$targetmessage->edit($builder)->then(function(){
+			$this->stoped = true;
+		});
+		self::$targetmessage = null;
+	}
 
+	private function getEmbed(Discord $discord, bool $online) : Embed{
+		$embed = new Embed($discord);
+		$embed->setTitle("Server Status");
+		$embed->addFieldValues("Server Status", $online ? "ONLINE" : "OFFLINE", false);
+		$embed->addFieldValues("players", $this->playercount."/50", true);
+		$embed->addFieldValues("version", $this->version, true);
+		if($online){
+			$embed->addFieldValues("games", $this->games);
+		}
+		$embed->setTimestamp();
+		return $embed;
 	}
 
 	//===メインスレッド呼び出し専用関数にてございます...===
@@ -171,12 +229,10 @@ class discordThread extends Thread{
 	}
 
 	public function sendMessage(string $message){
-		//var_dump("send".$message);
 		$this->P2D_Queue[] = serialize($message);
 	}
 
 	public function fetchMessages(){
-		//var_dump("?!?!");
 		$messages = [];
 		while(count($this->D2P_Queue) > 0){
 			$messages[] = unserialize($this->D2P_Queue->shift());

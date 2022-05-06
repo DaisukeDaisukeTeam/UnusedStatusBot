@@ -4,14 +4,12 @@ namespace pmmpDiscordBot;
 
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
-use pocketmine\scheduler\ClosureTask;
 use pocketmine\utils\Config;
 
 class pmmpDiscordBot extends PluginBase implements Listener{
 	public discordThread $client;
 	public bool $started = false;
 	public int $receive_check_interval;
-	private ThreadedLogListener $loggerListener;
 
 	public function onEnable() : void{
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
@@ -66,39 +64,13 @@ class pmmpDiscordBot extends PluginBase implements Listener{
 			return;
 		}
 
+
 		$this->client = new discordThread($this->getFile(), $no_vendor, $token, $send_guildId, $send_channelId, $receive_channelId, $send_interval, $debug);
-
+		$this->getScheduler()->scheduleRepeatingTask(new CollectorTask($this->client), 20 * 30);
 		unset($token);
-
-		$this->getScheduler()->scheduleDelayedTask(new ClosureTask(
-			function() : void{
-				$this->started = true;
-				$this->getLogger()->info("出力バッファリングを開始致します。");
-				$this->loggerListener = new ThreadedLogListener($this->client);
-				$this->getServer()->getLogger()->addAttachment($this->loggerListener);
-			}
-		), 10);
-
-//		$this->getScheduler()->scheduleDelayedRepeatingTask(new ClosureTask(
-//			function() : void{
-//				if(!$this->started) return;
-//				$string = ob_get_contents();
-//				var_dump($string);
-//				if($string === "") return;
-//				$this->client->sendMessage($string);
-//				ob_flush();
-//			}
-//		), 10, 1);
-
-
 	}
 
 	public function onDisable() : void{
-		if(isset($this->loggerListener)){
-			$this->getServer()->getLogger()->removeAttachment($this->loggerListener);
-		}
-		if(!$this->started) return;
-		//$this->client->shutdown();
-		$this->getLogger()->info("出力バッファリングを終了しています...");
+		$this->client->shutdown();
 	}
 }
